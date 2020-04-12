@@ -9,6 +9,6 @@ use Illuminate\Support\Str;
 $factory->define(Answer::class, function (Faker $faker) {
     return [
         'content' => $faker->text(),
-        'correct' => $faker->boolean,
+        'correct' => $faker->boolean($chanceOfGettingTrue = 10000),
     ];
 });

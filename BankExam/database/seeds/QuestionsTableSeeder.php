@@ -14,7 +14,7 @@ class QuestionsTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        factory(Question::class, 10000)->create()->each(function($question) use ($faker) {
+        factory(Question::class, 1000)->create()->each(function($question) use ($faker) {
             $answers  = [];
             $corrects = [1,2,3,4];
 

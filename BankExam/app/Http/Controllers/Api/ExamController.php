@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Exception;
 use Illuminate\Http\Request;
+use App\Http\Requests\Api\ExamRequest;
 use App\Services\ExamService;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -42,14 +43,16 @@ class ExamController extends Controller
 
         } catch (Exception $e) {
             return response()->json([
-                'status' => false,
-                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
-                'message' => $e->getMessage(),
+                'errors' => [
+                    'status' => false,
+                    'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                    'message' => $e->getMessage(),
+                ]
             ]);
         }
     }
 
-    public function store(Request $request)
+    public function store(ExamRequest $request)
     {
         try {
             $exam = $this->examService->save(['name' => $request->name]);
@@ -60,17 +63,22 @@ class ExamController extends Controller
             ]);
         } catch (Exception $e) {
             return response()->json([
-                'status' => false,
-                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
-                'message' => $e->getMessage(),
+                'errors' => [
+                    'status' => false,
+                    'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                    'message' => $e->getMessage(),
+                ]
             ]);
         }
     }
 
-    public function update(Request $request, $id)
+    public function update(ExamRequest $request, $id)
     {
         try {
             $exam = $this->examService->save(['name' => $request->name], $id);
+
+            $this->examService->attachQuestion($request->questions, $id);
+
             return response()->json([
                 'status' => true,
                 'code' => Response::HTTP_OK,
@@ -78,9 +86,11 @@ class ExamController extends Controller
             ]);
         } catch (Exception $e) {
             return response()->json([
-                'status' => false,
-                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
-                'message' => $e->getMessage(),
+                'errors' => [
+                    'status' => false,
+                    'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                    'message' => $e->getMessage(),
+                ]
             ]);
 
         }
@@ -97,9 +107,11 @@ class ExamController extends Controller
             ]);
         } catch (Exception $e) {
             return response()->json([
-                'status' => false,
-                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
-                'message' => $e->getMessage(),
+                'errors' => [
+                    'status' => false,
+                    'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                    'message' => $e->getMessage(),
+                ]
             ]);
 
         }
@@ -115,9 +127,11 @@ class ExamController extends Controller
             ]);
         } catch (Exception $e) {
             return response()->json([
-                'status' => false,
-                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
-                'message' => $e->getMessage(),
+                'errors' => [
+                    'status' => false,
+                    'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                    'message' => $e->getMessage(),
+                ]
             ]);
 
         }

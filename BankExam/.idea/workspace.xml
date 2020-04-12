@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b20d2d4b-2197-4286-b853-a80ad6cb928d" name="Default Changelist" comment="" />
+    <list default="true" id="b20d2d4b-2197-4286-b853-a80ad6cb928d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/QuestionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Api/ExamRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Api/QuestionRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/AnswerContentUniqueValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/AnswerNumberValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/RequireHaveCorrectAnswerValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Rules/UniqueAnswerCorrectValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/AnswerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/QuestionService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BankExam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BankExam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ExamService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ExamService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AnswerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AnswerFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_20_050620_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_20_050620_create_questions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/QuestionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/QuestionsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +60,15 @@
   </component>
   <component name="EditorConfigPreviewManager">
     <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/config/app.php" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_show_addresses="true" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="http://localhost" id="111f8d9a-2bf6-49b4-9f01-64f4a90ee2ad" name="Quiz" />
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -126,24 +166,39 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZwXQQXwEi8l7lOqkZWYXKBmsCx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\quiz.github.io\BankExam\app\Services" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+    <configuration name="Quiz" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="Quiz" session_id="PHPSTORM">
       <method v="2" />
     </configuration>
   </component>
@@ -173,52 +228,121 @@
       <workItem from="1585751115515" duration="3155000" />
       <workItem from="1585754315792" duration="67000" />
       <workItem from="1585754384989" duration="5204000" />
+      <workItem from="1585810976272" duration="9140000" />
+      <workItem from="1585834787390" duration="26000" />
+      <workItem from="1585834814334" duration="1920000" />
+      <workItem from="1585895355843" duration="19000" />
+      <workItem from="1586333541842" duration="13703000" />
+      <workItem from="1586359505556" duration="144000" />
+      <workItem from="1586365663185" duration="125000" />
+      <workItem from="1586424974178" duration="1752000" />
+      <workItem from="1586426948789" duration="571000" />
+      <workItem from="1586676514543" duration="10421000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="52" key="#Composer" timestamp="1585751271033">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="361" y="52" key="#Composer/62.0.1474.864@62.0.1474.864" timestamp="1585751271033" />
-    <state x="507" y="24" key="#PHP" timestamp="1585754212231">
+    <state x="391" y="90" key="#Docker" timestamp="1586426624448">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="507" y="24" key="#PHP/62.0.1474.864@62.0.1474.864" timestamp="1585754212231" />
-    <state x="549" y="148" key="FileChooserDialogImpl" timestamp="1585754381351">
+    <state x="391" y="90" key="#Docker/62.0.1474.864@62.0.1474.864" timestamp="1586426624448" />
+    <state x="507" y="24" key="#PHP" timestamp="1586347378487">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="549" y="148" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585754381351" />
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1585751228067">
+    <state x="507" y="24" key="#PHP/62.0.1474.864@62.0.1474.864" timestamp="1586347378487" />
+    <state x="534" y="123" key="#Quiz" timestamp="1586426039397">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1585751228067" />
-    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1585751228067">
+    <state x="534" y="123" key="#Quiz/62.0.1474.864@62.0.1474.864" timestamp="1586426039397" />
+    <state x="379" y="88" key="#Servers" timestamp="1586426597225">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1585751228067" />
-    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1585751228067">
+    <state x="379" y="88" key="#Servers/62.0.1474.864@62.0.1474.864" timestamp="1586426597225" />
+    <state x="254" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586426625105">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1585751228067" />
-    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1585751228067">
+    <state x="254" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1586426625105" />
+    <state x="540" y="259" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#" timestamp="1586426442945">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1342" height="195" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1585751228067" />
-    <state x="271" y="37" key="SettingsEditor" timestamp="1585759588813">
+    <state x="540" y="259" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#/62.0.1474.864@62.0.1474.864" timestamp="1586426442945" />
+    <state x="549" y="148" key="FileChooserDialogImpl" timestamp="1585895372656">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="271" y="37" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1585759588813" />
+    <state x="549" y="148" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585895372656" />
+    <state width="1342" height="276" key="GridCell.Tab.0.bottom" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.0.center" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.0.left" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.0.right" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.1.bottom" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.1.center" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.1.left" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.1.right" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.2.bottom" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.2.center" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.2.left" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state width="1342" height="276" key="GridCell.Tab.2.right" timestamp="1586426727331">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1342" height="276" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1586426727331" />
+    <state x="394" y="58" width="981" height="707" key="SettingsEditor" timestamp="1586425746100">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="394" y="58" width="981" height="707" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1586425746100" />
     <state x="465" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1585754318498">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="465" y="218" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1585754318498" />
-    <state x="425" y="179" key="run.anything.popup" timestamp="1585755128936">
+    <state x="910" y="79" key="refactoring.ChangeSignatureDialog" timestamp="1585817688153">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="425" y="179" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1585755128936" />
+    <state x="910" y="79" key="refactoring.ChangeSignatureDialog/62.0.1474.864@62.0.1474.864" timestamp="1585817688153" />
+    <state x="425" y="179" key="run.anything.popup" timestamp="1586340629420">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="425" y="179" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1586340629420" />
   </component>
 </project>
