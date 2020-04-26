@@ -1,11 +1,10 @@
 <template>
-  <div id="app">
-      <el-container>
-
-          <el-aside width="230px">
-              <div class="logo-container">
-                  <img data-v-ad5d153c=""
-                       src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg
+    <div id="app">
+        <el-container>
+            <el-aside width="230px">
+                <div class="logo-container">
+                    <img data-v-ad5d153c=""
+                         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg
                        9IjE0NnB4IiBoZWlnaHQ9IjM4cHgiIHZpZXdCb3g9IjAgMCAxNDYgMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc
                        3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQwICgzMzc2MikgLSB
                        odHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+U2hhcGUgQ29weTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkI
@@ -115,117 +114,116 @@
                        wMzc4LDM0LjA5MDQ2MjcgOTkuNzI0NDg3NCwzMi45ODUyODQxIDk5LjcyNDA3NDcsMzIuMjg1MTY3OCBMODYuNjYwMDUwMiw0MC4yMDEyMzIxIEw4Ni42N
                        jAwNTAyLDM3LjAzNDUzMSBDODYuNjYwMDUwMiwzNS43OTA0MzA1IDg3LjQ4NTU0NjIsMzUuMjQ0NjU2NCA4Ny40ODU1NDYyLDM1LjI0NDY1NjQgTDk3LjU
                        xNjAxMDUsMjkuMTY5MTMzOSBaIiBpZD0iU2hhcGUtQ29weSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+"
-                       alt="element-logo" class="nav-logo">
-              </div>
-              <el-menu
-                  default-active="2"
-                  class="el-menu-vertical-demo"
-                  background-color="#545c64"
-                  text-color="#fff"
-                  :router="true"
-                  active-text-color="#ffd04b">
-                  <el-menu-item index="0">
-                      <template slot="title">
-                          <i class="el-icon-menu"/>
-                          <span>Exam Management</span>
-                      </template>
-                  </el-menu-item>
-                  <el-menu-item index="1">
-                      <i class="el-icon-menu"/>
-                      <span>Question Bank</span>
-                  </el-menu-item>
-                  <el-menu-item index="2">
-                      <i class="el-icon-menu"/>
-                      <span>Students Management</span>
-                  </el-menu-item>
-                  <el-menu-item index="3">
-                      <i class="el-icon-menu"/>
-                      <span>Report Result</span>
-                  </el-menu-item>
-              </el-menu>
-          </el-aside>
+                         alt="element-logo" class="nav-logo">
+                </div>
+                <el-menu
+                    default-active="2"
+                    class="el-menu-vertical-demo"
+                    background-color="#545c64"
+                    text-color="#fff"
+                    :router="true"
+                    active-text-color="#ffd04b">
+                    <el-menu-item index="0">
+                        <template slot="title">
+                            <i class="el-icon-menu"/>
+                            <span>Exam Management</span>
+                        </template>
+                    </el-menu-item>
+                    <el-menu-item index="1">
+                        <i class="el-icon-menu"/>
+                        <span>Question Bank</span>
+                    </el-menu-item>
+                    <el-menu-item index="2">
+                        <i class="el-icon-menu"/>
+                        <span>Students Management</span>
+                    </el-menu-item>
+                    <el-menu-item index="3">
+                        <i class="el-icon-menu"/>
+                        <span>Report Result</span>
+                    </el-menu-item>
+                </el-menu>
+            </el-aside>
 
-          <el-container>
-              <el-header>
-                  <div class="menu-header">
-                      <el-dropdown :hide-on-click="false">
+            <el-container>
+                <el-header>
+                    <div class="menu-header">
+                        <el-dropdown :hide-on-click="false">
                         <span class="el-dropdown-link account">
                             Administrator
                             <i class="el-icon-arrow-down el-icon--right" />
                         </span>
-                          <el-dropdown-menu slot="dropdown">
-                              <el-dropdown-item>Change password</el-dropdown-item>
-                              <el-dropdown-item>Settings</el-dropdown-item>
-                              <el-dropdown-item>Results</el-dropdown-item>
-                              <el-dropdown-item divided>Logout</el-dropdown-item>
-                          </el-dropdown-menu>
-                      </el-dropdown>
-                  </div>
-              </el-header>
-              <el-main>
-                  <el-breadcrumb separator-class="el-icon-arrow-right" class="breadcrumb-container">
-                      <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
-                      <el-breadcrumb-item>promotion management</el-breadcrumb-item>
-                      <el-breadcrumb-item>promotion list</el-breadcrumb-item>
-                      <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
-                  </el-breadcrumb>
+                            <el-dropdown-menu slot="dropdown">
+                                <el-dropdown-item>Change password</el-dropdown-item>
+                                <el-dropdown-item>Settings</el-dropdown-item>
+                                <el-dropdown-item>Results</el-dropdown-item>
+                                <el-dropdown-item divided>Logout</el-dropdown-item>
+                            </el-dropdown-menu>
+                        </el-dropdown>
+                    </div>
+                </el-header>
+                <el-main>
+                    <el-breadcrumb separator-class="el-icon-arrow-right" class="breadcrumb-container">
+                        <el-breadcrumb-item :to="{path: '/'}">homepage</el-breadcrumb-item>
+                        <el-breadcrumb-item>promotion management</el-breadcrumb-item>
+                        <el-breadcrumb-item>promotion list</el-breadcrumb-item>
+                        <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
+                    </el-breadcrumb>
 
-                  <router-view/>
+                    <router-view/>
 
-              </el-main>
-          </el-container>
+                </el-main>
+            </el-container>
 
-      </el-container>
-  </div>
+        </el-container>
+    </div>
 </template>
 
 <script>
     import 'reset-css';
 
     export default {
-      name: 'App',
-      components: {
+        name: 'App',
+        components: {
 
-      }
+        }
     }
 </script>
 
 <style>
     /*@open="handleOpen"*/
     /*@close="handleClose"*/
-#app{
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.logo-container{
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    background-color: rgb(84, 92, 100);
-}
-.menu-header{
+    #app{
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        background-color: rgb(84, 92, 100);
+    }
+    .menu-header{
         background-color: rgb(84, 92, 100);
         height: 60px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-}
-.account{
-    color: white;
-    padding-right: 20px;
-    cursor: pointer;
-}
-.el-header{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.el-aside{
-    background-color: rgb(84, 92, 100);
-    min-height: 700px;
-}
+    }
+    .account{
+        color: white;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    .el-header{
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+    }
+    .el-menu{
+        min-height: 700px;
+    }
 </style>

@@ -1,4 +1,4 @@
-# backend
+# admin
 
 ## Project setup
 ```

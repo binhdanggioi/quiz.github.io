@@ -2,30 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b20d2d4b-2197-4286-b853-a80ad6cb928d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ResultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/ResultService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/components/Exams/ExamForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/components/Exams/ListExam.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/components/Questions/ListQuestion.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/components/Questions/QuestionForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/Questions/ListQuestion.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/Questions/QuestionForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ExamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ExamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/ApiAuthMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/ApiAuthMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ExamService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ExamService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/admin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/components/Exams/ExamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Exams/ExamForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/components/Exams/ListExam.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/components/Questions/ListQuestion.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/components/Questions/QuestionForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Exams/ListExam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +179,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Vue/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
@@ -241,6 +238,11 @@
       <workItem from="1587881347643" duration="11700000" />
       <workItem from="1587895793477" duration="1640000" />
       <workItem from="1587897684306" duration="3861000" />
+      <workItem from="1587906248466" duration="2951000" />
+      <workItem from="1587910954193" duration="2078000" />
+      <workItem from="1587913080058" duration="80000" />
+      <workItem from="1587913206642" duration="21000" />
+      <workItem from="1587913246278" duration="96000" />
     </task>
     <servers />
   </component>
@@ -275,14 +277,18 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="254" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1586426625105" />
+    <state x="529" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587911557269">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="529" y="186" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864@62.0.1474.864" timestamp="1587911557269" />
     <state x="540" y="259" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#" timestamp="1586426442945">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="540" y="259" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#/62.0.1474.864@62.0.1474.864" timestamp="1586426442945" />
-    <state x="549" y="148" key="FileChooserDialogImpl" timestamp="1587900230620">
+    <state x="549" y="148" key="FileChooserDialogImpl" timestamp="1587913145560">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="549" y="148" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1587900230620" />
+    <state x="549" y="148" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1587913145560" />
     <state width="1342" height="276" key="GridCell.Tab.0.bottom" timestamp="1586426727331">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -347,5 +353,9 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="426" y="179" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1587899831203" />
+    <state x="429" y="39" width="670" height="676" key="search.everywhere.popup" timestamp="1587913284574">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="429" y="39" width="670" height="676" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1587913284574" />
   </component>
 </project>

@@ -1,15 +1,14 @@
 <template>
-<div>
-    <h1>Dm</h1>
-</div>
+    <div>
+        <h1>Hihi</h1>
+    </div>
 </template>
 
 <script>
     export default {
-        name: 'ListQuestionComponent',
-        props: {},
+        name: 'ListExamComponent',
         data() {
-            return {
+            return{
 
             }
         },
@@ -22,4 +21,3 @@
 <style scoped>
 
 </style>
-
