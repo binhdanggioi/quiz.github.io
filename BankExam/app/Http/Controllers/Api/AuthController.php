@@ -14,18 +14,6 @@ class AuthController extends Controller
         try {
             $params = request()->only(['email', 'password']);
 
-//            $token = auth()->attempt($params);
-
-//            if (!$token){
-//
-//                return response()->json([
-//                   'errors' => [
-//                        'status' => false,
-//                        'code'   => Response::HTTP_UNAUTHORIZED,
-//                        'message'=> 'Unauthozial',
-//                    ]
-//                ]);
-//            }
             if (! $token = auth()->attempt($params)) {
                 return response()->json(['error' => 'Unauthorized'], 401);
             }
@@ -47,16 +35,6 @@ class AuthController extends Controller
     public function logout()
     {
         try {
-            $user = auth()->user();
-            if(!$user){
-                return response()->json([
-                'errors' => [
-                    'status' => false,
-                    'code'   => Response::HTTP_INTERNAL_SERVER_ERROR,
-                    'message'=> 'User expire',
-                ]
-            ]);
-            }
 
             auth()->logout();
 

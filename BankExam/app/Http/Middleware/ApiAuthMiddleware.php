@@ -25,7 +25,7 @@ class ApiAuthMiddleware
                 'errors' => [
                     'status' => false,
                     'code'   => Response::HTTP_UNAUTHORIZED,
-                    'message'=> 'Ha ha dm'
+                    'message'=> 'Chua dang nhap'
                 ]
             ]);
           }

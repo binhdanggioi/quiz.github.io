@@ -9,6 +9,7 @@ class ExamService
      * @param array $data
      * data['name']
      * int $id
+     * @param null $id
      * @return
      */
     public function save(array $data,$id = null)
@@ -44,7 +45,10 @@ class ExamService
         foreach ($questions as $index => $question) {
             $question['exam_id'] = $examId;
             $questions[$index] = $question;
+            $question['created_at'] = now();
+            $question['updated_at'] = now();
         }
+        DB::table('exam_question')->where('exam_id', $examId)->delete();
         return DB::table('exam_question')->insert($questions);
     }
 }
