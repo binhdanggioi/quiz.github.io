@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b20d2d4b-2197-4286-b853-a80ad6cb928d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/Questions/ListQuestion.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/Questions/QuestionForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/Auth/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/Users/ListUser.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/Users/UserForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/admin/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/components/Exams/ExamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Exams/ExamForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/components/Exams/ListExam.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/components/Questions/ListQuestion.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/components/Questions/QuestionForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Exams/ListExam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/Exams/ListExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Exams/ListExam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/Questions/ListQuestion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Questions/ListQuestion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +167,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
@@ -242,7 +230,11 @@
       <workItem from="1587910954193" duration="2078000" />
       <workItem from="1587913080058" duration="80000" />
       <workItem from="1587913206642" duration="21000" />
-      <workItem from="1587913246278" duration="96000" />
+      <workItem from="1587913246278" duration="1348000" />
+      <workItem from="1587959804933" duration="1228000" />
+      <workItem from="1587975509294" duration="616000" />
+      <workItem from="1587977714341" duration="7400000" />
+      <workItem from="1587995154867" duration="32000" />
     </task>
     <servers />
   </component>
@@ -285,10 +277,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="540" y="259" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#/62.0.1474.864@62.0.1474.864" timestamp="1586426442945" />
-    <state x="549" y="148" key="FileChooserDialogImpl" timestamp="1587913145560">
+    <state x="549" y="148" key="FileChooserDialogImpl" timestamp="1587995186309">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="549" y="148" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1587913145560" />
+    <state x="549" y="148" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1587995186309" />
     <state width="1342" height="276" key="GridCell.Tab.0.bottom" timestamp="1586426727331">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

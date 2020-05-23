@@ -12,6 +12,11 @@ class Answer extends Model
         'content',
         'correct',
     ];
+
+    protected $casts = [
+        'correct' => 'boolean',
+    ];
+
     public function question()
     {
         return $this->belongsTo(Question::class);

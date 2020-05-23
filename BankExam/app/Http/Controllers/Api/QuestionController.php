@@ -9,7 +9,6 @@ use App\Http\Requests\Api\QuestionRequest;
 use Symfony\Component\HttpFoundation\Response;
 use App\Services\QuestionService;
 use App\Services\AnswerService;
-use Exception;
 
 class QuestionController extends Controller
 {
@@ -46,7 +45,7 @@ class QuestionController extends Controller
                     'currentPage' => $questionPaginate->currentPage(),
                 ]
             ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'errors' => [
                     'status'  => false,
@@ -74,9 +73,9 @@ class QuestionController extends Controller
             return response()->json([
                 'status'   => true,
                 'code'     => Response::HTTP_OK,
-                'question' => $question,
+                'questions' => $question,
             ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             DB::rollBack();
 
             return response()->json([
@@ -105,7 +104,7 @@ class QuestionController extends Controller
             }
 
             $answerIdsNeedDelete = array_diff($oldAnswerIds, $newAnswerIds);
-
+            
             $this->answerService->delete($answerIdsNeedDelete);
 
             $question = $this->questionService->save(['content' => $request->content], $id);
@@ -124,7 +123,7 @@ class QuestionController extends Controller
                 'code'     => Response::HTTP_OK,
                 'question' => $question,
             ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             DB::rollBack();
 
             return response()->json([
@@ -146,7 +145,7 @@ class QuestionController extends Controller
                 return response()->json([
                     'status'   => false,
                     'code'     => Response::HTTP_NOT_FOUND,
-                    'message'  => 'Question does not exists'
+                    'message'  => 'Question dose not exists'
                 ]);
             }
 
@@ -157,14 +156,14 @@ class QuestionController extends Controller
                 'code'     => Response::HTTP_OK,
                 'question' => $question,
             ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'errors' => [
                     'status'  => false,
                     'code'    => Response::HTTP_INTERNAL_SERVER_ERROR,
                     'message' => $e->getMessage(),
                 ]
-            ]); 
+            ]);
         }
     }
 
@@ -172,17 +171,15 @@ class QuestionController extends Controller
     {
         try {
             DB::beginTransaction();
-
             $this->questionService->delete([$id]);
             $this->answerService->deleteByQuestion($id);
-
             DB::commit();
 
             return response()->json([
                 'status'   => true,
                 'code'     => Response::HTTP_OK,
             ]);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             DB::rollBack();
 
             return response()->json([

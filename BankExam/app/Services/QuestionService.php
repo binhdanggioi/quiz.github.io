@@ -14,7 +14,9 @@ class QuestionService
     public function save(array $data,int $id = null)
     {
         return Question::UpdateOrCreate(
-            ['id' => $id],
+            [
+                'id' => $id
+            ],
             [
                 'content' => $data['content']
             ]

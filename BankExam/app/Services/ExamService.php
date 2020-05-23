@@ -22,7 +22,7 @@ class ExamService
 
 	public function getAll($orderBys = [],$limit = 10)
 	{
-	    $query = Exam::query();
+	    $query = Exam::query()->with('questions');
 
 	    if ($orderBys) {
 	        $query->orderBy($orderBys['column'], $orderBys['sort']);

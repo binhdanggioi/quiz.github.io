@@ -25,7 +25,7 @@ class ApiAuthMiddleware
                 'errors' => [
                     'status' => false,
                     'code'   => Response::HTTP_UNAUTHORIZED,
-                    'message'=> 'Chua dang nhap'
+                    'message'=> 'Chưa  đăng nhập'
                 ]
             ]);
           }

@@ -12,7 +12,7 @@ Route::namespace('Api')->prefix('v1')->group(function() {
 
     	Route::post('me','AuthController@me');
 
-    	Route::get('logout','AuthController@logout');
+    	Route::delete('logout','AuthController@logout');
 
     	Route::resource('results','ResultController')->except('create', 'edit', 'delete');
 	});

@@ -123,17 +123,17 @@
                     text-color="#fff"
                     :router="true"
                     active-text-color="#ffd04b">
-                    <el-menu-item index="0">
+                    <el-menu-item index="0" :route="{name: 'exams'}">
                         <template slot="title">
                             <i class="el-icon-menu"/>
                             <span>Exam Management</span>
                         </template>
                     </el-menu-item>
-                    <el-menu-item index="1">
+                    <el-menu-item index="1" :route="{name: 'questions'}">
                         <i class="el-icon-menu"/>
                         <span>Question Bank</span>
                     </el-menu-item>
-                    <el-menu-item index="2">
+                    <el-menu-item index="2" :route="{name: 'users'}">
                         <i class="el-icon-menu"/>
                         <span>Students Management</span>
                     </el-menu-item>
@@ -156,21 +156,21 @@
                                 <el-dropdown-item>Change password</el-dropdown-item>
                                 <el-dropdown-item>Settings</el-dropdown-item>
                                 <el-dropdown-item>Results</el-dropdown-item>
-                                <el-dropdown-item divided>Logout</el-dropdown-item>
+                                <el-dropdown-item divided>
+                                <span @click="logout()">Logout</span>
+                              </el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
                     </div>
                 </el-header>
-                <el-main>
+                <el-main class="main-content">
                     <el-breadcrumb separator-class="el-icon-arrow-right" class="breadcrumb-container">
                         <el-breadcrumb-item :to="{path: '/'}">homepage</el-breadcrumb-item>
-                        <el-breadcrumb-item>promotion management</el-breadcrumb-item>
-                        <el-breadcrumb-item>promotion list</el-breadcrumb-item>
-                        <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
+                        <el-breadcrumb-item>exam management</el-breadcrumb-item>
                     </el-breadcrumb>
-
-                    <router-view/>
-
+                    <el-main>
+                        <router-view/>
+                    </el-main>
                 </el-main>
             </el-container>
 
@@ -183,8 +183,18 @@
 
     export default {
         name: 'App',
-        components: {
-
+        methods: {
+          logout() {
+            this.$axios.delete('http://localhost:8000/api/v1/logout')
+            .then((res) => {
+              if (res.status === 200) {
+                localStorage.clear();
+                this.$router.push({name: 'login'})
+              }
+            }).catch((errors) => {
+              console.log(errors);
+            });
+          }
         }
     }
 </script>
@@ -225,5 +235,12 @@
     }
     .el-menu{
         min-height: 700px;
+    }
+    .main-content{
+        padding: 0px!important;
+    }
+    .breadcrumb-container{
+        padding: 20px;
+        background-color: #f1f1f1;
     }
 </style>

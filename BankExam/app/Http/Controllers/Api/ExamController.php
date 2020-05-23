@@ -114,7 +114,7 @@ class ExamController extends Controller
             return response()->json([
                 'status' => true,
                 'code' => Response::HTTP_OK,
-                'exams' => $exam,
+                'exam' => $exam,
             ]);
         } catch (Exception $e) {
             return response()->json([
