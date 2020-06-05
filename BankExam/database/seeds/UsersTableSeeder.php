@@ -16,13 +16,23 @@ class UsersTableSeeder extends Seeder
     {
 //        factory(User::class,500)->create();
         DB::table('users')->insert([
-            'name' => 'What is Laravel',
-            'email' => 'admin@admin.com',
-            'phone' =>'(241) 852-9103',
-            'email_verified_at' => null,
-            'password' => bcrypt('123456'),
-            'created_at'  => now(),
-            'updated_at'  => now(),
-        ]);
-    }
+    [
+        'name' => 'admin',
+        'email' => 'admin@gmail.com',
+        'phone' => '0364824343',
+        'password' => bcrypt('123456'),
+        'created_at' => now(),
+        'updated_at' => now(),
+        'email_verified_at' => now(),
+    ],
+    [
+        'name' => 'user',
+        'email' => 'user@gmail.com',
+        'phone' => '0886214612',
+        'password' => bcrypt('123456'),
+        'created_at' => now(),
+        'updated_at' => now(),
+        'email_verified_at' => now(),
+    ],
+]);    }
 }

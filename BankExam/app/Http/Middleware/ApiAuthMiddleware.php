@@ -35,7 +35,7 @@ class ApiAuthMiddleware
                 'errors' => [
                     'status' => false,
                     'code'   => Response::HTTP_INTERNAL_SERVER_ERROR,
-                    'message'=> 'Ha ha'
+                    'message'=> $e->getMessage()
                 ]
             ]);
             }

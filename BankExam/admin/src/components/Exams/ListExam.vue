@@ -109,10 +109,11 @@
                 this.$router.push({name: 'exams.detail', params: {id: id}});
             },
             edit(id) {
+
                 this.$axios.get(`api/v1/exams/${id}`).then((res) => {
                     if (res.status === 200) {
                         this.drawer = true;
-                        this.examForm = res.data.exams;
+                        this.examForm = res.data.exam;
                     }
                     }).catch((errors) => {
                       console.log(errors);

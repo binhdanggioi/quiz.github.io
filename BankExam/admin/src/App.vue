@@ -133,14 +133,6 @@
                         <i class="el-icon-menu"/>
                         <span>Question Bank</span>
                     </el-menu-item>
-                    <el-menu-item index="2" :route="{name: 'users'}">
-                        <i class="el-icon-menu"/>
-                        <span>Students Management</span>
-                    </el-menu-item>
-                    <el-menu-item index="3">
-                        <i class="el-icon-menu"/>
-                        <span>Report Result</span>
-                    </el-menu-item>
                 </el-menu>
             </el-aside>
 
@@ -200,8 +192,6 @@
 </script>
 
 <style>
-    /*@open="handleOpen"*/
-    /*@close="handleClose"*/
     #app{
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;

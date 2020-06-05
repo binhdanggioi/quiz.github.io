@@ -29,6 +29,7 @@
                 loading: false,
                 totalRecord: 0,
                 currentPage: 1,
+                sort: 'column=id&sort=desc'
             }
         },
         created() {
