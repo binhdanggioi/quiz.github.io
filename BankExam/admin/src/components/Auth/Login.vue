@@ -46,7 +46,8 @@ export default {
             .then((res) => {
               if (res.status === 200) {
                 localStorage.setItem('access_token',res.data.access_token);
-                 this.$router.push({ name: 'exams' })
+                 this.$router.push({ name: 'exams' });
+                 setTimeout(function () { this.login() }.bind(this), 1000)
               }
             }).catch((errors) => {
               console.log(errors);

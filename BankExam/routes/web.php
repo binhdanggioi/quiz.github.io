@@ -10,3 +10,4 @@ Route::namespace('Frontend')->group(function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/logout', 'HomeController@logout')->name('logout');
